@@ -2,4 +2,88 @@
 
 *{
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  padding: 20px;
+}
+
+h1{
+  font-size: 3em;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.card-pokemon{
+  width: 80%;
+  height: 200px;
+  background-color: #1dcaa9;
+  border-radius: 12px;
+  color: #fff;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 24px;
+}
+
+.card-id{
+  display: flex;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(0,143,112);
+  font-size: 0.8em;
+}
+
+.card-name{
+  height: 20%;
+}
+
+.card-detail{
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  height: 70%;
+  width: 100%;
+}
+
+.card-detail .skill-pokemon{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+}
+
+.skill-pokemon span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 0.6em;
+  margin-bottom: 8px;
+  background-color: #3eddc2;
+  width: 70px;
+  height: 30px;
+}
+
+.card-detail .img-pokemon{
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.card-detail .img-pokemon img{
+  width: 80%;
+  height: 80%;
+  transform: scaleX(-1);
 }
