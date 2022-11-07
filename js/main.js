@@ -1,18 +1,10 @@
-function convertPokemonTypesToList(pokemonTypes){
-  return pokemonTypes.map((typeSlot) => {
-    return `
-      <span>${typeSlot.type.name}</span>
-    `
-  })
-}
-
 function pokemonComponent(pokemon) {
   return `
-  <li>
+  <li class="${pokemon.type}">
     <div class="card-pokemon">
       <div class="card-id">
         <div>
-          <p>${pokemon.order}</p>
+          <p>${pokemon.id}</p>
         </div>
       </div>
       <div class="card-name">
@@ -20,10 +12,10 @@ function pokemonComponent(pokemon) {
       </div>
       <div class="card-detail">
         <div class="skill-pokemon">
-          ${convertPokemonTypesToList(pokemon.types).join('')}
+          ${pokemon.types.map((type) => `<span>${type}</span>`).join('')}
         </div>
         <div class="img-pokemon">
-          <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}"/>
+          <img src="${pokemon.image}" alt="${pokemon.name}"/>
         </div>
       </div>
     </div>
