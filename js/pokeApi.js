@@ -6,7 +6,7 @@ function convertPokeApiDetailToPokemon(pokeDetail){
   pokemon.name = pokeDetail.name;
 
   pokemon.types = pokeDetail.types.map((typeSlot) => typeSlot.type.name);
-  pokemon.type = pokemon.types.get(0);
+  pokemon.type = pokemon.types[0];
   pokemon.image = pokeDetail.sprites.other.dream_world.front_default;
 
   return pokemon; 
