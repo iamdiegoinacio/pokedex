@@ -1,57 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="public/css/normalize.css"/>
-  <link rel="stylesheet" href="/public/css/styles.css" />
-  <title>Pokedex</title>
-</head>
-<body>
-  <header class="header">
-    <h1>Pokedex</h1>
-  </header>
-
-  <div class="container">
-    <div class="card-pokemon">
-      <div class="card-id">
-        <div>
-          <p>#001</p>
-        </div>
-      </div>
-      <div class="card-name">
-        <span>Bulbasaur</span>
-      </div>
-      <div class="card-detail">
-        <div class="skill-pokemon">
-          <span>grass</span>
-          <span>poison</span>
-        </div>
-        <div class="img-pokemon">
-          <img src="/public/img/bulbasaur.png" alt="Bulbasur"/>
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/normalize.css" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Pokedex</h1>
+    </header>
+    <div class="container">
+      <ol id="pokemon-list-group">
+        <!-- <li>
+          <div class="card-pokemon">
+            <div class="card-id">
+              <div>
+                <p>#001</p>
+              </div>
+            </div>
+            <div class="card-name">
+              <span>Bulbasaur</span>
+            </div>
+            <div class="card-detail">
+              <div class="skill-pokemon">
+                <span>grass</span>
+                <span>poison</span>
+              </div>
+              <div class="img-pokemon">
+                <img src="/public/img/bulbasaur.png" alt="Bulbasur" />
+              </div>
+            </div>
+          </div>
+        </li> -->
+      </ol>
     </div>
-    <div class="card-pokemon">
-      <div class="card-id">
-        <div>
-          <p>#001</p>
-        </div>
-      </div>
-      <div class="card-name">
-        <span>Bulbasaur</span>
-      </div>
-      <div class="card-detail">
-        <div class="skill-pokemon">
-          <span>grass</span>
-          <span>poison</span>
-        </div>
-        <div class="img-pokemon">
-          <img src="/public/img/bulbasaur.png" alt="Bulbasur"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+    <script src="./js/pokemon-model.js"></script>
+    <script src="./js/pokeApi.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
