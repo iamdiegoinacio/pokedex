@@ -113,6 +113,7 @@ li{
   border: none;
   background-color: #6e5896;
   color: #fff;
+  cursor: pointer;
 }
 
 .pagination button:active{
@@ -169,4 +170,50 @@ li{
 } 
 .fairy{
   background-color:#f9aec7;
+}
+
+
+@media only screen and (max-width: 1920px){
+  ol{
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  li{
+    width: 25%;
+  }
+}
+
+
+@media only screen and (max-width: 1280px){
+  ol{
+    width: 90%;
+  }
+
+  li{
+    width: 33%;
+  }
+}
+
+
+@media only screen and (max-width: 720px){
+  ol{
+    width: 100%;
+  }
+
+  li{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  ol{
+    width: 100%;
+  }
+
+  li{
+    width: 100%;
+  }
 }
