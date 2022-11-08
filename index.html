@@ -13,29 +13,11 @@
       <h1>Pokedex</h1>
     </header>
     <div class="container">
-      <ol id="pokemon-list-group">
-        <!-- <li>
-          <div class="card-pokemon">
-            <div class="card-id">
-              <div>
-                <p>#001</p>
-              </div>
-            </div>
-            <div class="card-name">
-              <span>Bulbasaur</span>
-            </div>
-            <div class="card-detail">
-              <div class="skill-pokemon">
-                <span>grass</span>
-                <span>poison</span>
-              </div>
-              <div class="img-pokemon">
-                <img src="/public/img/bulbasaur.png" alt="Bulbasur" />
-              </div>
-            </div>
-          </div>
-        </li> -->
-      </ol>
+      <ol id="pokemon-list-group"></ol>
+
+      <div class="pagination">
+        <button type="button" id="loadMoreButton">More Pokemons...</button>
+      </div>
     </div>
     <script src="./js/pokemon-model.js"></script>
     <script src="./js/pokeApi.js"></script>

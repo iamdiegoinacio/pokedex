@@ -61,7 +61,6 @@ li{
   height: 10%;
   align-items: center;
   justify-content: flex-end;
-  color: rgb(0,143,112);
   font-size: 0.8em;
 }
 
@@ -91,9 +90,9 @@ li{
   border-radius: 12px;
   font-size: 0.6em;
   margin-bottom: 8px;
-  background-color: #3eddc2;
   width: 70px;
   height: 30px;
+  filter: brightness(1.2);
 }
 
 .card-detail .img-pokemon{
@@ -106,6 +105,18 @@ li{
   width: 80%;
   height: 80%;
   transform: scaleX(-1);
+}
+
+.pagination button{
+  border-radius: 12px;
+  padding: 14px 18px;
+  border: none;
+  background-color: #6e5896;
+  color: #fff;
+}
+
+.pagination button:active{
+  transform: scale(95%);
 }
 
 .grass{
